@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const axios = require('axios');
+import axios from 'axios';
 
 module.exports = {
     data: new SlashCommandBuilder()
