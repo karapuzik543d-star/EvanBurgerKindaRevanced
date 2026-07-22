@@ -1,7 +1,7 @@
-const { SlashCommandBuilder } = require('discord.js');
+import { SlashCommandBuilder } from 'discord.js';
 import axios from 'axios';
 
-module.exports = {
+export default {
     data: new SlashCommandBuilder()
         .setName('google')
         .setDescription('Search for information on Google')
