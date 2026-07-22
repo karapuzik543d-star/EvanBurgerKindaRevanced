@@ -134,11 +134,11 @@ logger.info(`[Autorole] Removed role ${role.name} (${role.id}) from auto-assign 
             content: `✅ Роль ${role} успешно удалена из автовыдачи.`,
             flags: MessageFlags.Ephemeral
         });
-
 } catch (error) {
         logger.error(`[Autorole] Error removing autorole in ${guild.name}:`, error);
         return await replyUserError(interaction, { type: ErrorTypes.UNKNOWN, message: 'Failed to remove AutoRole settings.' });
     }
+}
 } else if (subcommand === 'list') {
     try {
         const guildConfig = await getGuildConfig(client, guild.id);
